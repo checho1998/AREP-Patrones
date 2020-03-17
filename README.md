@@ -34,4 +34,33 @@ Ahora si procedemos a crear la base de datos la cual vamos a enlazar con el seuc
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/7.PNG)
 
-8. 
+8. Una vez que la base de datos este disponible vamos a probar la conectividad usando DBeaver o cualquier otro programa que desee.
+Ubicamos entonces el host de la DB en la configuracion y nos conectamos con esa información:
+
+- Host: database-1.c13o4rw8e3uj.us-east-1.rds.amazonaws.com
+- Name DB: DBarep
+
+Host:
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/8.PNG)
+
+Name:
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/9.PNG)
+
+9. Debemos clonar este repositorio y configurar el archivo application.properties con los datos de nuestra base de datos que ya creamos previamente.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/10.PNG)
+
+10. Luego debemos modificar la entidad que va a ser mapeada de la base de datos (no olvide agregar los getters y setters de cada atributo y dos consutrctores, uno vacio y otro con todos los parametros)
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/11.PNG)
+
+11. Posteriormente debemos crear la consulta que se va a realizar a la base de datos ya creada, al igual que construir el objeto a partir de esa consulta que se creara en el Entity.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/12.PNG)
+
+12. Al ejecutar la aplicación con el comando 
+
+- mvn spring-boot:run
+
