@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.springAWS;
+package edu.escuelaing.arep;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
