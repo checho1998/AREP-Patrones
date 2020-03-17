@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.modelo;
+package edu.escuelaing.arep.springAWS.modelo;
 
 
 /**

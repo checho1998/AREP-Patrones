@@ -1,9 +1,9 @@
-package edu.escuelaing.arep.repositorio;
+package edu.escuelaing.arep.springAWS.repositorio;
 
 import java.util.*;
 import java.sql.SQLException;
 
-import edu.escuelaing.arep.modelo.Entity;
+import edu.escuelaing.arep.springAWS.modelo.Entity;
 
 /**
  * 

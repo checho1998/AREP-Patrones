@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.repositorio;
+package edu.escuelaing.arep.springAWS.repositorio;
 
 
 import java.sql.Connection;
@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import edu.escuelaing.arep.modelo.Entity;
+import edu.escuelaing.arep.springAWS.modelo.Entity;
 
 /**
  * 

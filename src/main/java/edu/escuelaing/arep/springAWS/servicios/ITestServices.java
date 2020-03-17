@@ -1,11 +1,11 @@
-package edu.escuelaing.arep.servicios;
+package edu.escuelaing.arep.springAWS.servicios;
 
 import java.sql.SQLException;
 import java.util.*;
 
 import org.springframework.stereotype.Service;
 
-import edu.escuelaing.arep.modelo.Entity;
+import edu.escuelaing.arep.springAWS.modelo.Entity;
 /**
  * 
  * @author checho

@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.configuracion;
+package edu.escuelaing.arep.springAWS.configuracion;
 
 import java.sql.SQLException;
 
