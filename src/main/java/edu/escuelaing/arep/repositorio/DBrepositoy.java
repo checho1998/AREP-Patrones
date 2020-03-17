@@ -29,7 +29,7 @@ public class DBrepositoy implements IDBRepositoy {
 	
 	@Override
 	public List<Entity> query() throws SQLException {
-		String query = "TODO: QUERY";
+		String query = "SELECT * FROM estudiante";
 		List<Entity> entities = new ArrayList<Entity>();
 		Connection connection = null;
 		try {
@@ -38,6 +38,10 @@ public class DBrepositoy implements IDBRepositoy {
 			ResultSet rs = stmt.executeQuery(query);
 			while (rs.next()) {
 				Entity entity = new Entity();
+				entity.setNombre(rs.getString("nombre"));
+				entity.setApellido(rs.getString("apellido"));
+				entity.setSexo(rs.getString("sexo"));
+				entity.setEdad(rs.getString("edad"));
 				entities.add(entity);
 			}
 			connection.close();
