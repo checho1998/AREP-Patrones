@@ -60,7 +60,42 @@ Name:
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/12.PNG)
 
-12. Al ejecutar la aplicación con el comando 
+12. Al ejecutar la aplicación con el comando nos debe mostrar lo que ya previamente configuramos
 
 - mvn spring-boot:run
 
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/13.PNG)
+
+Ahora vamos ahora a crear un EC2 y subir nuestra aplicacion para desde alli consumir la base de datos
+
+13. vamos a crear una instancia de EC2 que contenga java como se ve a continuación
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/14.PNG)
+
+14. vamos a crear otra regla como se ve acontinuacion para el acceso a este servicio que es por el puerto 8080
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/15.PNG)
+
+15. revisar que nuestra instancia esta corriendo correctamente
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/16.PNG)
+
+16. como podemos ver nos vamos a conectar a la instancia de EC2 que acabamos de crear con el codigo que nos muestra y desde la carpeta donde tenemos la llave que acabamos de descargar.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/17.PNG)
+
+17. Vamos a borrar la version de java 1.7.0 ya que necesitamos es la 8 y lo haremos con el siguiente comando.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/18.PNG)
+
+18. Ahora vamos a instalar el java que necesitamos que es el 1.8.0 como se puede ver.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/19.PNG)
+
+19. vamos a conectarnos por medio de sfpt con el mismo comando para tener acceso en ambas consolas pero en ves de ssh va a ser sftp y pasar el archivo con put y el nombre del archivo como se puede ver. 
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/20.PNG)
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/21.PNG)
+
+20. 
