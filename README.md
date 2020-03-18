@@ -1,5 +1,8 @@
 # AREP-Patrones
+
 ## PASO A PASO
+
+### Creación de RDS
 
 Antes de crear la base de datos debemos crear un security group con los puertos de mysql
 
@@ -48,6 +51,8 @@ Name:
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/9.PNG)
 
+### Creación Aplicación web
+
 9. Debemos clonar este repositorio y configurar el archivo application.properties con los datos de nuestra base de datos que ya creamos previamente.
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/10.PNG)
@@ -65,6 +70,8 @@ Name:
 - mvn spring-boot:run
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/13.PNG)
+
+### Despliegue en EC2
 
 Ahora vamos ahora a crear un EC2 y subir nuestra aplicacion para desde alli consumir la base de datos
 
@@ -98,4 +105,71 @@ Ahora vamos ahora a crear un EC2 y subir nuestra aplicacion para desde alli cons
 
 ![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/21.PNG)
 
-20. 
+20. ahora lo iniciamos con el comando java -jar y el nombre del archivo .jar q pasamos y lo ejecutamos como se puede ver.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/22.PNG)
+
+21. Como se puede ver sigue funcionando nuestro programa pero desde EC2 en AWS.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/23.PNG)
+
+### Creación de recurso estático
+
+22. dirijimos a la seccion de S3 y creamos un nuevo Bucket
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/24.PNG)
+
+23. En la seccion de permisos desmarcamos la opcion de bloquer el accesso publico para que quede publico.
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/25.PNG)
+
+24. Cargamos el archivo que necesitamos cargar como este html
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/26.PNG)
+
+25.Seleccionamos la opcion que es para todos y que se pueda leer ya que es publico
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/27.PNG)
+
+26. para finalizar comprobamos que si sirve en AWS como se puede ver 
+
+![Imagenes](https://github.com/checho1998/AREP-Patrones/blob/master/Imagenes/28.PNG)
+
+### Acabamos con nuestro laboratorio
+
+
+## Como Instalar y Correr el Codigo
+
+- Debe estar en el directorio donde quiere traer el repositorio
+- Para traer el repositorio a el directorio que usted desee, debe abrir la consola del PC e ingresar este codigo:
+```
+$ git clone https://github.com/checho1998/Libreria-Numeros-Complejos.git
+```
+- luego debe ingresar el siguiente codigo para limpiar y compilar el programa desde el directorio donde este el programa
+```
+$ mvn clean install 
+```
+- Podria tambien usar el siguiente codigo para provar las pruebas y ver su completa funcionalidad
+```
+$ mvn test
+```
+- Para correr el programa desde windows puede correr desde su cmd este codigo
+```
+mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"]
+```
+
+![Imagenes](https://github.com/checho1998/AREP-LAB-04/blob/master/imagenes/correr.PNG)
+
+
+## Construido en lenguaje
+  
+  - Java (V8)
+  
+## Ejecutar Pruebas
+
+Las pruebas estan desarrolladas con la dependencia de JUnit 5, por lo tanto es necesario tenerla
+en el pc donde se corran.
+
+## Autor
+
+- Sergio Alejandro Nuñez Mendivelso
