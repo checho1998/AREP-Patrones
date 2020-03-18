@@ -158,7 +158,6 @@ $ mvn test
 mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"]
 ```
 
-![Imagenes](https://github.com/checho1998/AREP-LAB-04/blob/master/imagenes/correr.PNG)
 
 
 ## Construido en lenguaje
